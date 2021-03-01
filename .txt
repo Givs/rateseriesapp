@@ -1,0 +1,10 @@
+const[moviesRated, setMoviesRated] = useState([])
+    
+    const id = navigation.getParam('id')
+    const rate = navigation.getParam('rate')
+
+    const addnewMovie = (id,rate) => {
+        const newMoviesRatedList = {id,rate}
+        setMoviesRated(newMoviesRatedList)
+        console.log(moviesRated)
+    }
